@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thirty interactive Happy Tales books with choices and multiple endings.">
+  <title>Choose Your Path Books - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="path-library-page">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html" aria-current="page">Library</a><a href="safety.html">Safety</a><a class="btn primary account-link" href="login.html">Account</a></nav>
+  </header>
+  <main>
+    <section class="path-hero">
+      <div>
+        <p class="eyebrow">30 interactive books</p>
+        <h1>Choose Your Path</h1>
+        <p>You decide what happens next through three longer decision chapters. Every choice offers three directions and leads toward one of nine endings.</p>
+        <div class="page-head-chips"><span>3 choices each chapter</span><span>Find 9 endings</span><span>Replay every book</span></div>
+      </div>
+      <img src="assets/tale-covers/tale-130.webp" alt="A child discovering a magical doorway into many stories">
+    </section>
+    <section class="section path-collection">
+      <div class="section-head"><h2>Which adventure will you enter?</h2><p>Choose a cover, read the opening, and guide the hero through the story.</p></div>
+      <div class="path-progress-dashboard" id="pathProgressDashboard"></div>
+      <div class="path-book-grid" id="pathBookGrid"></div>
+    </section>
+  </main>
+  <footer><div><strong>Choose Your Path</strong><span>Thirty longer adventures with three choices per chapter and nine endings.</span></div><div><strong>Library</strong><a href="library.html">All stories</a></div><div><strong>Create</strong><a href="create.html">Story maker</a></div><div><strong>Games</strong><a href="games.html">Happy Games</a></div></footer>
+  <script src="site.js"></script><script src="path-books-data.js"></script><script src="path-library.js"></script>
+</body>
+</html>

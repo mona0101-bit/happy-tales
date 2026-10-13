@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Happy Tales dashboard for saved progress, daily picks, reading pathways, games, and quests.">
+  <title>Dashboard - Happy Tales</title>
+  <link rel="icon" href="assets/happy-tales-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="Happy Tales home"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="dashboard.html" aria-current="page">Dashboard</a><a href="create.html">Create</a><a href="library.html">Library</a><a href="games.html">Games</a><a href="safety.html">Safety</a><a class="btn primary account-link" href="login.html">Account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard-hero">
+      <div>
+        <p class="eyebrow">Happy Tales hub</p>
+        <h1 id="dashboardGreeting">Your next adventure is ready.</h1>
+        <p>Use this page to continue reading, play a recommended game, track Starpath Quest, and keep a simple daily learning routine.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="create.html">Create a story</a>
+          <a class="btn secondary" href="games.html">Play a game</a>
+        </div>
+      </div>
+      <aside class="dashboard-today-card">
+        <span>Today's plan</span>
+        <strong id="todayPlanTitle">Read, play, and explore</strong>
+        <ol id="todayPlanList"></ol>
+      </aside>
+    </section>
+
+    <section class="section dashboard-section">
+      <div class="section-head">
+        <h2>Progress snapshot</h2>
+        <p>Saved on this device so families can leave and return later.</p>
+      </div>
+      <div class="dashboard-stats" id="dashboardStats"></div>
+    </section>
+
+    <section class="section dashboard-section alt">
+      <div class="section-head">
+        <h2>Recommended next steps</h2>
+        <p>A balanced mix of stories, games, pathways, and quest progress.</p>
+      </div>
+      <div class="dashboard-recommendations" id="dashboardRecommendations"></div>
+    </section>
+
+    <section class="section dashboard-section">
+      <div class="section-head">
+        <h2>For parents and teachers</h2>
+        <p>Quick checks that make the site easier to use with a young learner.</p>
+      </div>
+      <div class="dashboard-care-grid">
+        <article><span aria-hidden="true">&#128274;</span><h3>Safety first</h3><p>Unsafe story prompts are blocked before story text appears.</p><a href="safety.html">Review safety</a></article>
+        <article><span aria-hidden="true">&#127891;</span><h3>Choose a level</h3><p>Games and Starpath Quest support Preschool through Grade 6.</p><a href="games.html">Open games</a></article>
+        <article><span aria-hidden="true">&#128483;</span><h3>Read aloud</h3><p>Story pages include narration controls and language switching.</p><a href="library.html">Find a story</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Happy Tales</strong><span>Your saved reading and learning hub.</span></div>
+    <div><strong>Start</strong><a href="create.html">Create</a><a href="library.html">Library</a></div>
+    <div><strong>Play</strong><a href="games.html">Happy Games</a><a href="quest.html">Starpath Quest</a></div>
+    <div><strong>Trust</strong><a href="safety.html">Safety</a><a href="login.html">Account</a></div>
+  </footer>
+  <script src="site.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

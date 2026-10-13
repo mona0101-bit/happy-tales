@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tale Library - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="library-page">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html" aria-current="page">Library</a><a href="safety.html">Safety</a><a class="btn primary account-link" href="login.html">Account</a></nav>
+  </header>
+  <main>
+    <section class="page-head">
+      <p class="eyebrow">160 illustrated adventures</p>
+      <h1>The Tale Library</h1>
+      <p>Explore 160 different stories from Preschool through Grade 6. Every reading level has four full shelves of five books.</p>
+      <p class="library-access" id="libraryAccess"></p>
+    </section>
+    <section class="path-library-band">
+      <div class="path-band-copy">
+        <p class="eyebrow">New interactive collection</p>
+        <h2>Choose what happens next.</h2>
+        <p>Enter 30 longer branching books with three choices in every decision chapter and nine endings to discover.</p>
+        <a class="btn primary" href="path-stories.html">Explore Choose Your Path</a>
+      </div>
+      <div class="path-band-books" aria-label="Choose Your Path featured books">
+        <a href="path-reader.html?id=1"><img src="assets/tale-covers/tale-101.webp" alt="The Compass Beneath the Lake"></a>
+        <a href="path-reader.html?id=2"><img src="assets/tale-covers/tale-102.webp" alt="The Clocktower Cloud"></a>
+        <a href="path-reader.html?id=3"><img src="assets/tale-covers/tale-103.webp" alt="The Secret of Sunflower Station"></a>
+        <a href="path-reader.html?id=4"><img src="assets/tale-covers/tale-104.webp" alt="The Library at the Edge of Night"></a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="library-toolbar">
+        <label>Find a tale<input id="librarySearch" type="search" placeholder="Search titles or themes"></label>
+        <label>Reading level<select id="libraryGrade"><option value="">All levels</option><option value="preschool">Preschool</option><option value="kindergarten">Kindergarten</option><option value="grade1">Grade 1</option><option value="grade2">Grade 2</option><option value="grade3">Grade 3</option><option value="grade4">Grade 4</option><option value="grade5">Grade 5</option><option value="grade6">Grade 6</option></select></label>
+        <label>Reading time<select id="libraryLength"><option value="">All lengths</option><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7">7 minutes</option><option value="8">8 minutes</option><option value="9">9 minutes</option><option value="10">10 minutes</option></select></label>
+      </div>
+      <div class="bookshelf-library" id="bookshelfLibrary"></div>
+    </section>
+  </main>
+  <footer><div><strong>Happy Tales</strong><span>160 illustrated stories for curious young readers.</span></div><div><strong>Read</strong><a href="library.html">Tale Library</a><a href="daily-story.html">Monthly favourite</a></div><div><strong>Create</strong><a href="create.html">Story maker</a></div></footer>
+  <script src="site.js"></script><script src="expanded-tales-data.js"></script><script src="tales-data.js"></script><script src="library.js"></script>
+</body>
+</html>

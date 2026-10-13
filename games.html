@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free educational games for children from Preschool through Grade 6.">
+  <title>Free Learning Games - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="games-page">
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="Happy Tales home"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html">Library</a><a href="safety.html">Safety</a>
+      <a class="btn primary account-link" href="login.html">Account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="games-hero">
+      <div>
+        <p class="eyebrow">Always free to play</p>
+        <h1>Happy Games</h1>
+        <p>Practice thinking, words, numbers, science, and world knowledge through colorful challenges made for Preschool through Grade 6.</p>
+        <div class="page-head-chips"><span>Free access</span><span>30 game types</span><span>Progress saves automatically</span></div>
+      </div>
+      <div class="game-hero-board" aria-hidden="true">
+        <span>7</span><span>+</span><span>3</span><span>=</span><span>10</span>
+        <strong>&#9733;</strong>
+      </div>
+    </section>
+
+    <section class="game-shell">
+      <div class="game-library-view" id="gameLibrary">
+        <div class="game-library-heading">
+          <div>
+            <p class="eyebrow">Free game library</p>
+            <h2>Choose your next challenge</h2>
+          </div>
+          <div class="library-count"><strong>30</strong><span>games</span></div>
+        </div>
+        <nav class="game-tabs" id="gameTabs" aria-label="Game categories">
+        <button data-game="sudoku" type="button">Sudoku</button>
+        <button data-game="crossword" type="button">Crosswords</button>
+        <button data-game="blanks" type="button">Fill the Blank</button>
+        <button data-game="math" type="button">Math</button>
+        <button data-game="science" type="button">Science</button>
+        <button data-game="geography" type="button">Geography</button>
+        <button data-game="flags" type="button">Guess the Flag</button>
+        <button data-game="countries" type="button">Country Detective</button>
+        <button data-game="spelling" type="button">Spelling Bee</button>
+        <button data-game="basketball" type="button">Basketball</button>
+        <button data-game="darts" type="button">Darts</button>
+        <button data-game="soccer" type="button">Soccer</button>
+        <button data-game="golf" type="button">Mini Golf</button>
+        <button data-game="memory" type="button">Memory Match</button>
+        <button data-game="simon" type="button">Simon Lights</button>
+        <button data-game="tictactoe" type="button">Tic-Tac-Toe</button>
+        <button data-game="connectfour" type="button">Connect Four</button>
+        <button data-game="merge" type="button">Number Merge</button>
+        <button data-game="mines" type="button">Treasure Sweeper</button>
+        <button data-game="slider" type="button">Sliding Puzzle</button>
+        <button data-game="maze" type="button">Maze Escape</button>
+        <button data-game="patterns" type="button">Pattern Builder</button>
+        <button data-game="scramble" type="button">Word Scramble</button>
+        <button data-game="wordsearch" type="button">Word Search</button>
+        <button data-game="reaction" type="button">Rocket Reaction</button>
+        <button data-game="colormatch" type="button">Color Match</button>
+        <button data-game="oddone" type="button">Odd One Out</button>
+        <button data-game="sequence" type="button">Sequence Sprint</button>
+        <button data-game="typing" type="button">Typing Trail</button>
+        <button data-game="whack" type="button">Whack-a-Star</button>
+        </nav>
+      </div>
+
+      <section class="game-stage" aria-live="polite">
+        <button class="game-library-back" id="backToGames" type="button" aria-label="Back to all games">
+          <span aria-hidden="true">&#8592;</span> All games
+        </button>
+        <aside class="game-menu">
+          <p class="eyebrow" id="gameEyebrow">Logic challenge</p>
+          <h2 id="gameName">Sudoku</h2>
+          <p id="gameDescription">Fill every row, column, and box without repeating a number.</p>
+          <div class="game-controls" id="gameControls"></div>
+          <button class="btn primary" id="startGame" type="button">Start game</button>
+          <div class="game-score" id="gameScore"><span>Score</span><strong>0</strong></div>
+        </aside>
+        <div class="game-play">
+          <div class="game-status" id="gameStatus">Choose your settings, then start playing.</div>
+          <div id="gameBoard"></div>
+          <div class="game-actions" id="gameActions"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="quest-launch">
+      <div class="quest-launch-copy">
+        <p class="eyebrow">The grand adventure</p>
+        <h2>Fifteen worlds are waiting.</h2>
+        <p>Roll the dice, answer challenges, battle a different boss in every world, and choose the path that leads your animal hero to the Heart Star.</p>
+        <div class="page-head-chips"><span>15 worlds</span><span>180 challenges</span><span>Progress saves automatically</span></div>
+        <a class="btn primary quest-play-button" href="quest.html"><span aria-hidden="true">&#9733;</span> Enter Starpath Quest</a>
+        <div class="quest-mini-worlds" aria-label="Adventure worlds">
+          <span><b>01</b> Starlands</span>
+          <span><b>02</b> Ember Peaks</span>
+          <span><b>03</b> Frost Realm</span>
+        </div>
+      </div>
+      <div class="quest-launch-map">
+        <div class="quest-preview-top">
+          <span>World 1 of 15</span>
+          <strong>Shattered Starlands</strong>
+          <small>Forest, sky and crystal coast</small>
+        </div>
+        <div class="quest-map-route" aria-hidden="true">
+          <span class="quest-map-node node-start">&#9733;</span>
+          <span class="quest-map-node node-forest">1</span>
+          <span class="quest-map-node node-sky">2</span>
+          <span class="quest-map-node node-ocean">3</span>
+          <span class="quest-map-node node-boss">&#9889;</span>
+        </div>
+        <div class="quest-preview-badge"><span>Final boss</span><strong>Stormfang</strong></div>
+        <div class="quest-world-peeks" aria-hidden="true">
+          <span class="peek-lava"><b>World 2</b><small>Ember Peaks</small></span>
+          <span class="peek-ice"><b>World 3</b><small>Frost Realm</small></span>
+          <span class="peek-more"><b>+12</b><small>more worlds</small></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Happy Games</strong><span>Free learning games for Preschool through Grade 6.</span></div>
+    <div><strong>Stories</strong><a href="library.html">Tale Library</a><a href="create.html">Create</a></div>
+    <div><strong>Trust</strong><a href="safety.html">Child safety</a></div>
+    <div><strong>Account</strong><a href="login.html">Sign in</a></div>
+  </footer>
+  <script src="site.js"></script>
+  <script src="games.js"></script>
+</body>
+</html>

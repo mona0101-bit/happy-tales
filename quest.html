@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Starpath Quest is a free branching level adventure for children.">
+  <title>Starpath Quest - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quest-page">
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="Happy Tales home"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html">Library</a><a href="safety.html">Safety</a><a href="games.html" aria-current="page">Games</a>
+      <a class="btn primary account-link" href="login.html">Account</a>
+    </nav>
+  </header>
+
+  <main class="quest-app">
+    <section class="quest-hero">
+      <div class="quest-hero-copy">
+        <p class="quest-kicker"><span>&#9733;</span> Choose your path. Beat every boss.</p>
+        <h1><span>Starpath</span> Quest</h1>
+        <p>Roll the dice, solve clever challenges, and guide your animal hero through 15 magical worlds to restore the Heart Star.</p>
+        <div class="quest-hero-actions">
+          <a class="quest-start-button" href="#questMapPanel">Start adventure <span>&#8594;</span></a>
+          <span class="quest-free-badge">Free to play</span>
+        </div>
+        <div class="quest-hero-stats">
+          <span><strong>180</strong> challenges</span>
+          <span><strong>8</strong> animal heroes</span>
+          <span><strong>15</strong> magical worlds</span>
+        </div>
+      </div>
+      <div class="quest-adventure-scene" aria-hidden="true">
+        <div class="scene-map-banner"><span>WORLD 1</span><strong>The Shattered Starlands</strong></div>
+        <span class="scene-spark spark-one">&#9733;</span>
+        <span class="scene-spark spark-two">&#10022;</span>
+        <span class="scene-spark spark-three">&#9733;</span>
+        <div class="scene-landmark scene-castle">&#127984;</div>
+        <div class="scene-landmark scene-waterfall">&#127754;</div>
+        <div class="scene-landmark scene-portal">&#128302;</div>
+        <div class="scene-landmark scene-treasure">&#127873;</div>
+        <div class="scene-world scene-sky-world"><span>&#9729;</span><strong>SKY</strong></div>
+        <div class="scene-world scene-forest-world"><span>&#127795;</span><strong>FOREST</strong></div>
+        <div class="scene-world scene-ocean-world"><span>&#8776;</span><strong>OCEAN</strong></div>
+        <div class="scene-path path-one"></div>
+        <div class="scene-path path-two"></div>
+        <div class="scene-path path-three"></div>
+        <div class="scene-heart-star"><span>&#9733;</span><strong>HEART<br>STAR</strong></div>
+        <div class="scene-hero hero-fox"><span class="mini-character animal-fox">&#129418;</span></div>
+        <div class="scene-hero hero-rabbit"><span class="mini-character animal-rabbit">&#128048;</span></div>
+        <div class="scene-hero hero-owl"><span class="mini-character animal-owl">&#129417;</span></div>
+        <div class="scene-die"><span>5</span></div>
+        <div class="scene-boss-fortress"><i></i><b></b><span></span></div>
+        <div class="scene-boss monster-thunder-titan"><span class="quest-monster monster-sky monster-thunder-titan"><i></i><b>&#9889;</b></span></div>
+      </div>
+    </section>
+
+    <section class="quest-dashboard">
+      <aside class="quest-profile">
+        <p class="eyebrow">Your explorer</p>
+        <div class="quest-avatar" id="questAvatar" aria-hidden="true">S</div>
+        <label for="questName">Change hero name</label>
+        <input id="questName" maxlength="16" value="Star Scout">
+        <small class="name-save-note">Your name and icon save automatically</small>
+        <label for="questGrade">Question grade</label>
+        <select id="questGrade">
+          <option value="preschool">Preschool</option>
+          <option value="kindergarten">Kindergarten</option>
+          <option value="grade1">Grade 1</option>
+          <option value="grade2">Grade 2</option>
+          <option value="grade3">Grade 3</option>
+          <option value="grade4">Grade 4</option>
+          <option value="grade5">Grade 5</option>
+          <option value="grade6">Grade 6</option>
+        </select>
+        <small class="grade-note">Every dice and boss question matches this grade.</small>
+        <fieldset class="character-picker">
+          <legend>Change hero icon</legend>
+          <button type="button" data-character="fox" aria-label="Choose Sunny the fox"><span class="mini-character animal-fox">&#129418;</span><strong>Sunny</strong><small>Fox</small></button>
+          <button type="button" data-character="panda" aria-label="Choose Poppy the panda"><span class="mini-character animal-panda">&#128060;</span><strong>Poppy</strong><small>Panda</small></button>
+          <button type="button" data-character="owl" aria-label="Choose Hoot the owl"><span class="mini-character animal-owl">&#129417;</span><strong>Hoot</strong><small>Owl</small></button>
+          <button type="button" data-character="dolphin" aria-label="Choose Splash the dolphin"><span class="mini-character animal-dolphin">&#128044;</span><strong>Splash</strong><small>Dolphin</small></button>
+          <button type="button" data-character="rabbit" aria-label="Choose Binky the rabbit"><span class="mini-character animal-rabbit">&#128048;</span><strong>Binky</strong><small>Rabbit</small></button>
+          <button type="button" data-character="cat" aria-label="Choose Mimi the cat"><span class="mini-character animal-cat">&#128049;</span><strong>Mimi</strong><small>Cat</small></button>
+          <button type="button" data-character="bear" aria-label="Choose Teddy the bear"><span class="mini-character animal-bear">&#128059;</span><strong>Teddy</strong><small>Bear</small></button>
+          <button type="button" data-character="turtle" aria-label="Choose Tilly the turtle"><span class="mini-character animal-turtle">&#128034;</span><strong>Tilly</strong><small>Turtle</small></button>
+        </fieldset>
+        <div class="quest-stat"><span>Star crystals</span><strong id="questStars">0</strong></div>
+        <div class="quest-stat"><span>World progress</span><strong id="questCompleted">W1: 0 / 12</strong></div>
+        <button class="btn secondary" id="resetQuest" type="button">Reset adventure</button>
+        <a class="back-link" href="games.html">&#8592; All Happy Games</a>
+      </aside>
+
+      <div class="quest-main">
+        <section class="quest-map-panel" id="questMapPanel">
+          <div class="quest-section-head">
+            <div><p class="eyebrow">World map</p><h2>Choose your next level</h2></div>
+            <p id="questMapMessage">Pick a glowing node to play. Swipe the map to explore every region.</p>
+          </div>
+          <div class="quest-map" id="questMap" aria-label="Starpath Quest level map"></div>
+        </section>
+
+        <section class="quest-level-panel" id="questLevel" aria-live="polite">
+          <div class="quest-empty">
+            <span aria-hidden="true">&#9733;</span>
+            <h2>Your adventure is waiting.</h2>
+            <p>Select an unlocked level from the map.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Starpath Quest</strong><span>A free branching adventure from Happy Tales.</span></div>
+    <div><strong>Games</strong><a href="games.html">All games</a></div>
+    <div><strong>Stories</strong><a href="library.html">Tale Library</a></div>
+    <div><strong>Safety</strong><a href="safety.html">Parent controls</a></div>
+  </footer>
+  <script src="site.js"></script>
+  <script src="quest.js"></script>
+</body>
+</html>

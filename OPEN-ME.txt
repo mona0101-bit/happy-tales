@@ -1,0 +1,13 @@
+﻿Happy Tales Updated Website
+
+Open locally:
+1. Double-click index.html to preview the main website.
+2. Double-click dashboard.html to see saved progress and daily recommendations.
+3. Double-click games.html to preview the games page.
+
+Upload to Cloudflare:
+Upload happy-tales-ai-game-photos.zip as the new deployment.
+
+Important:
+The folder contains the full website files and all images/assets.
+The ZIP is the file to upload online.

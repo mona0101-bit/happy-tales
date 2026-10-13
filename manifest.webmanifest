@@ -1,0 +1,18 @@
+{
+  "name": "Happy Tales",
+  "short_name": "Happy Tales",
+  "description": "Safe stories, learning games, pathways, and quests for families and classrooms.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6fbff",
+  "theme_color": "#1ec9b7",
+  "icons": [
+    {
+      "src": "assets/happy-tales-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

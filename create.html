@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a Story - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="create-page">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="create.html" aria-current="page">Create</a>
+      <a href="library.html">Library</a>
+      <a href="safety.html">Safety</a>
+      <a class="btn primary account-link" href="login.html">Create account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head page-head-illustrated">
+      <div class="page-head-copy">
+        <p class="eyebrow">Story maker</p>
+        <h1>Create a Happy Tale</h1>
+        <p id="storyAllowance">Create unlimited stories for free.</p>
+        <div class="page-head-chips"><span>Pick a mood</span><span>Choose a lesson</span><span>Make it yours</span></div>
+      </div>
+      <div class="page-head-art">
+        <img src="assets/tale-covers/tale-37.webp" alt="A young wizard creating a magical story">
+      </div>
+    </section>
+    <section class="section">
+      <div class="demo-layout">
+        <form class="form-card" id="storyForm">
+          <div class="form-grid">
+            <label>Reading level
+              <select id="grade">
+                <option value="preschool">Preschool</option>
+                <option value="kindergarten">Kindergarten</option>
+                <option value="grade1" selected>Grade 1</option>
+                <option value="grade2">Grade 2</option>
+                <option value="grade3">Grade 3</option>
+                <option value="grade4">Grade 4</option>
+                <option value="grade5">Grade 5</option>
+                <option value="grade6">Grade 6</option>
+              </select>
+            </label>
+            <label>Story mood
+              <select id="mood"><option>Bedtime calm</option><option>Funny and silly</option><option>Adventure</option><option>Learning moment</option><option>Confidence builder</option></select>
+            </label>
+            <label>Lesson
+              <select id="lesson"><option>Kindness</option><option>Sharing</option><option>Being brave</option><option>Trying again</option><option>Telling the truth</option></select>
+            </label>
+            <label>Story length
+              <select id="storyLength">
+                <option value="1">1 minute</option>
+                <option value="2">2 minutes</option>
+                <option value="3" selected>3 minutes</option>
+                <option value="4">4 minutes</option>
+                <option value="5">5 minutes</option>
+                <option value="6">6 minutes</option>
+              </select>
+            </label>
+            <label>Story idea
+              <textarea id="idea" placeholder="Leave blank for a surprise story, or describe your idea."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Create story</button>
+          </div>
+        </form>
+        <article class="story-output" id="storyOutput" aria-live="polite">
+          <div class="status safe">Safety check ready</div>
+          <h2>Your next story starts here.</h2>
+          <p>Happy Tales will use your settings and prompt to create a unique, child-safe story. Leave the idea blank for a surprise tale.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Happy Tales</strong><span>Five free stories, then a free account.</span></div>
+    <div><strong>Explore</strong><a href="index.html">Home</a><a href="safety.html">Safety</a></div>
+    <div><strong>Account</strong><a href="login.html">Parent account</a><a href="login.html">Teacher account</a></div>
+    
+  </footer>
+  <script src="site.js"></script>
+  <script src="story.js"></script>
+</body>
+</html>

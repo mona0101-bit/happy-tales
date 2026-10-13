@@ -1,0 +1,29 @@
+{
+  "total_questions": 1050,
+  "categories": {
+    "Counting": 191,
+    "Math": 544,
+    "Science": 110,
+    "English": 77,
+    "Countries and Capitals": 62,
+    "Geography": 59,
+    "Logic": 7
+  },
+  "grades": {
+    "preschool": 71,
+    "kindergarten": 117,
+    "grade1": 158,
+    "grade2": 144,
+    "grade3": 160,
+    "grade4": 120,
+    "grade5": 147,
+    "grade6": 133
+  },
+  "checks": {
+    "correct_index_in_range": true,
+    "correct_answer_present": true,
+    "no_duplicate_answer_choices": true,
+    "no_duplicate_question_text": true,
+    "counting_questions_specify_color_and_shape": true
+  }
+}

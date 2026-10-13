@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>This Month's Favourite Story - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="reader-page">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html">Library</a><a href="safety.html">Safety</a>
+      <a class="btn primary account-link" href="login.html">Create account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="daily-reader">
+      <a class="back-link" href="index.html">&#8592; Back home</a>
+      <div class="daily-reader-head">
+        <p class="eyebrow">This month's favourite story</p>
+        <h1 id="readerTitle">The Moonlit Map</h1>
+        <p id="readerSummary"></p>
+        <div class="chips" id="readerChips"></div>
+      </div>
+      <img class="reader-image" id="readerImage" src="assets/moonlit-map.webp" alt="Today's illustrated Happy Tales story">
+      <article class="reader-paper">
+        <div id="freeStoryPart"></div>
+        <div id="lockedEnding" hidden></div>
+        <div id="subscriberEnding"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Happy Tales</strong><span>A special favourite story featured every month.</span></div>
+    <div><strong>Read</strong><a href="daily-story.html">Monthly favourite</a><a href="create.html">Create</a></div>
+    <div><strong>Safety</strong><a href="safety.html">Our restrictions</a></div>
+    
+  </footer>
+  <script src="site.js"></script>
+  <script src="daily-stories.js"></script>
+  <script src="daily-reader.js"></script>
+</body>
+</html>

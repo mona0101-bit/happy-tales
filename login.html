@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account - Happy Tales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span><span class="brand-name">Happy Tales</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="create.html">Create</a><a href="library.html">Library</a><a href="safety.html">Safety</a>
+      <a class="btn primary" href="login.html" aria-current="page">Account</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-head page-head-illustrated">
+      <div class="page-head-copy">
+        <p class="eyebrow">Your story doorway</p>
+        <h1>Welcome to Happy Tales.</h1>
+        <p>Sign in to continue, or select a Parent, Teacher, or Learner profile.</p>
+        <div class="page-head-chips"><span>Safe usernames</span><span>Save favourites</span><span>Free library</span></div>
+      </div>
+      <div class="page-head-art">
+        <img src="assets/hidden-library.webp" alt="A glowing hidden library waiting to be explored">
+      </div>
+    </section>
+    <section class="section">
+      <div class="demo-layout">
+        <div class="form-card">
+          <div class="role-grid" id="roleGrid">
+            <button class="role-card" type="button" data-role="parent"><span class="role-symbol" aria-hidden="true">&#9733;</span><h3>Parent</h3><p>Stories for bedtime, routines, confidence, and family reading.</p></button>
+            <button class="role-card" type="button" data-role="teacher"><span class="role-symbol" aria-hidden="true">&#9998;</span><h3>Teacher</h3><p>Stories for lessons, classrooms, reading groups, and discussion.</p></button>
+            <button class="role-card" type="button" data-role="kid"><span class="role-symbol" aria-hidden="true">&#9786;</span><h3>Learner</h3><p>A supervised profile for reading, educational games, favourites, and learning adventures.</p></button>
+          </div>
+        </div>
+        <form class="form-card" id="accountForm">
+          <div class="form-grid">
+            <label>Display name<input id="accountName" autocomplete="name" maxlength="40" required><small>Learners may use a preferred name or nickname. A full legal name is not required.</small></label>
+            <label>Username<input id="accountUsername" autocomplete="username" minlength="3" maxlength="20" spellcheck="false" required aria-describedby="usernameHelp usernameStatus"><small id="usernameHelp">3-20 letters or numbers. Spaces, underscores, and hyphens are allowed.</small><span class="field-status" id="usernameStatus" aria-live="polite"></span></label>
+            <label>Email address<input id="accountEmail" type="email" autocomplete="email" required><small>Learner profiles should use an email managed by a parent, guardian, or teacher.</small></label>
+            <label>Password<input id="accountPassword" type="password" minlength="6" autocomplete="new-password" required></label>
+            <label class="guardian-confirm" id="guardianConfirm"><input id="guardianApproval" type="checkbox"> <span>A parent, guardian, or teacher approves the creation of this learner profile.</span></label>
+            <input id="accountRole" type="hidden">
+            <button class="btn primary" type="submit">Continue</button>
+            <p id="accountMessage" aria-live="polite">Sign in with an existing account, or choose Parent, Teacher, or Learner to create one.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div><strong>Happy Tales</strong><span>Safe profiles for families, classrooms, and supervised learners.</span></div>
+    <div><strong>Explore</strong><a href="create.html">Create</a></div>
+    <div><strong>Safety</strong><a href="safety.html">Restrictions</a></div>
+    
+  </footer>
+  <script src="site.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

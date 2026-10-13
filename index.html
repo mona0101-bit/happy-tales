@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Happy Tales creates safe, personalized stories for children with parent and teacher controls.">
+  <meta name="theme-color" content="#1ec9b7">
+  <meta property="og:title" content="Happy Tales">
+  <meta property="og:description" content="Safe stories, learning games, reading pathways, and quests for families and classrooms.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/happy-tales-share.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Happy Tales">
+  <meta name="twitter:description" content="Safe stories, learning games, reading pathways, and quests for families and classrooms.">
+  <meta name="twitter:image" content="assets/happy-tales-share.svg">
+  <title>Happy Tales - Safe Stories for Children</title>
+  <link rel="icon" href="assets/happy-tales-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="Happy Tales home">
+      <span class="brand-mark" aria-hidden="true"><span class="star-eyes"><span>&#9733;</span><span>&#9733;</span></span><span class="brand-smile"></span></span>
+      <span class="brand-name">Happy Tales</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="create.html">Create</a>
+      <a href="library.html">Library</a>
+      <a href="safety.html">Safety</a>
+      <a class="btn primary account-link" href="login.html">Create account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Safe stories made together</p>
+        <h1>Happy Tales</h1>
+        <p>Create magical, age-aware stories for bedtime, classrooms, and quiet moments. Everything is free while unsafe topics remain blocked.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="dashboard.html">Open dashboard</a>
+          <a class="btn primary" href="create.html">Create your first story</a>
+          <a class="btn secondary" href="safety.html">See how safety works</a>
+        </div>
+        <div class="hero-trust" aria-label="Happy Tales highlights">
+          <span><strong>Unlimited</strong> free stories</span>
+          <span><strong>160</strong> library tales</span>
+          <span><strong>100%</strong> child-safe prompts</span>
+        </div>
+      </div>
+      <div class="phone-preview featured-story" aria-label="Happy Tales featured story preview">
+        <div class="story-image-wrap">
+          <img class="story-image" id="dailyStoryImage" src="assets/moonlit-map.webp" alt="Happy Tales monthly favourite story illustration">
+          <span class="featured-label">This month's favourite story</span>
+          <span class="reading-time" id="dailyReadingTime">5 min read</span>
+        </div>
+        <div class="mini-story">
+          <p class="story-kicker" id="dailyStoryKicker">A gentle story about courage</p>
+          <h2 id="dailyStoryTitle">The Moonlit Map</h2>
+          <p id="dailyStorySummary">Maya follows a trail of tiny lanterns through a magical garden and discovers that asking for help is one of the bravest things we can do.</p>
+          <div class="story-card-footer">
+            <div class="chips" id="dailyStoryChips">
+              <span class="chip">Age 6</span><span class="chip">Kindness</span><span class="chip">Bedtime</span>
+            </div>
+            <a class="story-arrow" href="daily-story.html" aria-label="Read this month's favourite story">&#8594;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-hub section" aria-labelledby="experienceTitle">
+      <div class="section-head experience-head">
+        <div>
+          <p class="eyebrow">Pick today's adventure</p>
+          <h2 id="experienceTitle">One happy place to read, create, and play.</h2>
+        </div>
+        <p>Choose an activity that fits the moment. Every area is designed for young learners and the grown-ups guiding them.</p>
+      </div>
+      <div class="experience-grid">
+        <a class="experience-card dashboard-experience" href="dashboard.html">
+          <span class="experience-icon" aria-hidden="true">&#127775;</span>
+          <span class="experience-copy"><small>Continue everything</small><strong>Open dashboard</strong><span>See saved stories, game progress, pathway endings, and today's plan.</span></span>
+          <span class="experience-go" aria-hidden="true">&#8594;</span>
+        </a>
+        <a class="experience-card create-experience" href="create.html">
+          <span class="experience-icon" aria-hidden="true">&#10024;</span>
+          <span class="experience-copy"><small>Make something new</small><strong>Create a story</strong><span>Build a unique tale by age, mood, lesson, and reading time.</span></span>
+          <span class="experience-go" aria-hidden="true">&#8594;</span>
+        </a>
+        <a class="experience-card library-experience" href="library.html">
+          <span class="experience-icon" aria-hidden="true">&#128214;</span>
+          <span class="experience-copy"><small>Find a new favourite</small><strong>Explore 160 tales</strong><span>Browse illustrated books from Preschool through Grade 6.</span></span>
+          <span class="experience-go" aria-hidden="true">&#8594;</span>
+        </a>
+        <a class="experience-card games-experience" href="games.html">
+          <span class="experience-icon" aria-hidden="true">&#127918;</span>
+          <span class="experience-copy"><small>Learn through play</small><strong>Play Happy Games</strong><span>Practice math, science, words, geography, logic, and flags.</span></span>
+          <span class="experience-go" aria-hidden="true">&#8594;</span>
+        </a>
+        <a class="experience-card quest-experience" href="quest.html">
+          <span class="experience-icon" aria-hidden="true">&#9733;</span>
+          <span class="experience-copy"><small>Begin a bigger journey</small><strong>Enter Starpath Quest</strong><span>Roll, answer grade-based questions, explore maps, and defeat bosses.</span></span>
+          <span class="experience-go" aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>160 tales. A world for every reader.</h2>
+        <p>Read the complete illustrated library for free.</p>
+      </div>
+      <div class="tale-grid home-tale-preview">
+        <article class="tale-card"><a href="tale.html?id=1"><img src="assets/tale-covers/tale-01.webp" alt="The Coral City Compass cover"><div class="tale-card-body"><div class="chips"><span class="chip">5 min</span><span class="chip">Ocean</span></div><h2>The Coral City Compass</h2><p>An underwater adventure about courage and finding the way.</p><span class="tale-read">Read tale &#8594;</span></div></a></article>
+        <article class="tale-card"><a href="tale.html?id=12"><img src="assets/tale-covers/tale-12.webp" alt="The Red Ball Promise cover"><div class="tale-card-body"><div class="chips"><span class="chip">10 min</span><span class="chip">Friendship</span></div><h2>The Red Ball Promise</h2><p>Two dogs discover that sharing makes every game better.</p><span class="tale-read">Read tale &#8594;</span></div></a></article>
+        <article class="tale-card"><a href="tale.html?id=21"><img src="assets/tale-covers/tale-21.webp" alt="The Rooftop Star Map cover"><div class="tale-card-body"><div class="chips"><span class="chip">7 min</span><span class="chip">Wonder</span></div><h2>The Rooftop Star Map</h2><p>A child and an owl chart a star nobody noticed before.</p><span class="tale-read">Read tale &#8594;</span></div></a></article>
+        <article class="tale-card"><a href="tale.html?id=47"><img src="assets/tale-covers/tale-47.webp" alt="Books on Two Wheels cover"><div class="tale-card-body"><div class="chips"><span class="chip">9 min</span><span class="chip">Reading</span></div><h2>Books on Two Wheels</h2><p>A raccoon librarian pedals stories across the forest.</p><span class="tale-read">Read tale &#8594;</span></div></a></article>
+      </div>
+      <div class="library-cta"><a class="btn primary" href="library.html">Explore all 160 tales</a></div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-head">
+        <h2>A simple story-time routine.</h2>
+        <p>Each part of Happy Tales has its own focused page, making the website easy to understand and navigate.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <strong>1</strong>
+          <h3>Choose</h3>
+          <p>Select an age, mood, lesson, and optional story idea.</p>
+        </article>
+        <article class="card">
+          <strong>2</strong>
+          <h3>Check</h3>
+          <p>Happy Tales checks the request for unsafe or inappropriate themes.</p>
+        </article>
+        <article class="card">
+          <strong>3</strong>
+          <h3>Read</h3>
+          <p>Receive a new story that is saved in the browser to prevent repeats.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-games-band">
+      <div class="home-games-copy">
+        <p class="eyebrow">Always free to play</p>
+        <h2>Stories take a play break.</h2>
+        <p>Jump into colorful puzzles, Math worlds, Science discoveries, Geography quests, flags, and Spelling Bee challenges.</p>
+        <a class="btn primary" href="games.html">Enter Happy Games</a>
+      </div>
+      <div class="home-game-tiles">
+        <a href="games.html" class="home-game-tile math-tile"><strong>7 + 8</strong><span>Math worlds</span></a>
+        <a href="games.html" class="home-game-tile flag-tile"><strong>&#127758;</strong><span>Flags & geography</span></a>
+        <a href="games.html" class="home-game-tile word-tile"><strong>BEE</strong><span>Words & spelling</span></a>
+      </div>
+    </section>
+
+    <section class="section trust-ready-section">
+      <div class="section-head">
+        <h2>Built for grown-up confidence.</h2>
+        <p>Happy Tales keeps the fun bright while the important controls stay visible.</p>
+      </div>
+      <div class="trust-ready-grid">
+        <article>
+          <span aria-hidden="true">&#128274;</span>
+          <h3>Unsafe prompts blocked</h3>
+          <p>Story ideas are checked for inappropriate language, sexual content, illegal behavior, and unsafe themes before a story appears.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">&#128218;</span>
+          <h3>Progress stays saved</h3>
+          <p>Stories, games, Starpath Quest, and pathway endings save in the browser so families can leave and come back later.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">&#127758;</span>
+          <h3>Language and voice tools</h3>
+          <p>Readers can switch languages and use read-aloud controls on story pages for a smoother reading routine.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">&#10024;</span>
+          <h3>Free while it grows</h3>
+          <p>The library, creator, games, and quests are open in this version, making it easy to share and test with real families.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Happy Tales</strong><span>Safe storytelling for families and classrooms.</span></div>
+    <div><strong>Explore</strong><a href="create.html">Create</a><a href="safety.html">Safety</a></div>
+    <div><strong>Account</strong><a href="login.html">Sign in</a><a href="login.html">Create account</a></div>
+    
+  </footer>
+  <script src="site.js"></script>
+  <script src="daily-stories.js"></script>
+  <script src="home-daily.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "bank_file": "starpath-question-bank.json",
+  "total_questions": 1067,
+  "english_questions": 94,
+  "validation_issues_found": 0,
+  "issues": [],
+  "english_styles_added": [
+    "Fill in the blank",
+    "Finish the sentence",
+    "Object clues",
+    "Context clues",
+    "Grammar in context"
+  ]
+}
